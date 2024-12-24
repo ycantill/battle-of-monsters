@@ -8,7 +8,7 @@
         "hp": 10,
         "speed": 80,
         "type": "Type",
-        "imageUrl": "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/dead-unicorn.png"
+        "imageUrl": "/images/dead-unicorn.png"
       },
       {
         "id": "monster-2",
@@ -18,7 +18,7 @@
         "hp": 80,
         "speed": 90,
         "type": "Type",
-        "imageUrl": "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/old-shark.png"
+        "imageUrl": "/images/old-shark.png"
       },
       {
         "id": "monster-3",
@@ -28,7 +28,7 @@
         "hp": 90,
         "speed": 70,
         "type": "Type",
-        "imageUrl": "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/red-dragon.png"
+        "imageUrl": "/images/red-dragon.png"
       },
       {
         "id": "monster-4",
@@ -38,7 +38,7 @@
         "hp": 80,
         "speed": 60,
         "type": "Type",
-        "imageUrl": "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/robot-bear.png"
+        "imageUrl": "/images/robot-bear.png"
       },
       {
         "id": "monster-5",
@@ -48,7 +48,7 @@
         "hp": 70,
         "speed": 80,
         "type": "Type",
-        "imageUrl": "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/angry-snake.png"
+        "imageUrl": "/images/angry-snake.png"
       }
     ],
     "battle": [
@@ -61,7 +61,7 @@
           "hp": 10,
           "speed": 80,
           "type": "Type",
-          "imageUrl": "https://fsl-assessment-public-files.s3.amazonaws.com/assessment-cc-01/dead-unicorn.png"
+          "imageUrl": "/images/dead-unicorn.png"
         },
         "tie": true
       }
