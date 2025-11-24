@@ -45,9 +45,9 @@ describe('BattleOfMonsters', () => {
     await battleOfMonstersFactory();
     expect(screen.getByTestId('start-battle-button')).toBeDisabled();
     expect(screen.getByTestId('monster-1')).toBeInTheDocument();
-    act(() => screen.getByTestId('monster-1').click());
+    await act(async () => screen.getByTestId('monster-1').click());
     expect(screen.getByTestId('start-battle-button')).toBeEnabled();
-    act(() => screen.getByTestId('monster-1').click());
+    await act(async () => screen.getByTestId('monster-1').click());
     expect(screen.getByTestId('start-battle-button')).toBeDisabled();
   });
 

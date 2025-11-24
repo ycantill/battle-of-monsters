@@ -5,6 +5,10 @@ import { useAppDispatch } from '../../app/hooks';
 import { Monster } from '../../models/interfaces/monster.interface';
 import { setSelectedMonster } from '../../reducers/monsters/monsters.actions';
 import {
+  resetBattle,
+  setRandomMonster,
+} from '../../reducers/monsters/monsters.actions.extended';
+import {
   Image,
   ListTitle,
   MonsterCard,
@@ -18,7 +22,6 @@ type MonstersListProps = {
 
 const MonstersList: React.FC<MonstersListProps> = ({ monsters }) => {
   const dispatch = useAppDispatch();
-
   const [selectedMonsterId, setSelectedMonsterId] = useState<string | null>(
     null,
   );
@@ -26,7 +29,9 @@ const MonstersList: React.FC<MonstersListProps> = ({ monsters }) => {
   const handleMonsterClick = (monster: Monster) => {
     const value = selectedMonsterId === monster.id ? null : monster.id;
     setSelectedMonsterId(value);
-    dispatch(setSelectedMonster(!value ? null : monster));
+    dispatch(setSelectedMonster(value ? monster : null));
+    dispatch(setRandomMonster());
+    dispatch(resetBattle());
   };
 
   return (
