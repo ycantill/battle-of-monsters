@@ -5,4 +5,3 @@ export const API_URL =
   process.env.NODE_ENV === 'production'
     ? 'https://us-central1-battle-of-monsters.cloudfunctions.net'
     : 'http://localhost:3001';
-
