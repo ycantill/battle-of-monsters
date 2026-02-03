@@ -24,7 +24,7 @@ const monstersData = {
       hp: 10,
       speed: 80,
       type: "Type",
-      imageUrl: "/images/dead-unicorn.png",
+      imageUrl: "images/dead-unicorn.png",
     },
     {
       id: "monster-2",
@@ -34,7 +34,7 @@ const monstersData = {
       hp: 80,
       speed: 90,
       type: "Type",
-      imageUrl: "/images/old-shark.png",
+      imageUrl: "images/old-shark.png",
     },
     {
       id: "monster-3",
@@ -44,7 +44,7 @@ const monstersData = {
       hp: 90,
       speed: 70,
       type: "Type",
-      imageUrl: "/images/red-dragon.png",
+      imageUrl: "images/red-dragon.png",
     },
     {
       id: "monster-4",
@@ -54,7 +54,7 @@ const monstersData = {
       hp: 80,
       speed: 60,
       type: "Type",
-      imageUrl: "/images/robot-bear.png",
+      imageUrl: "images/robot-bear.png",
     },
     {
       id: "monster-5",
@@ -64,7 +64,7 @@ const monstersData = {
       hp: 70,
       speed: 80,
       type: "Type",
-      imageUrl: "/images/angry-snake.png",
+      imageUrl: "images/angry-snake.png",
     },
   ],
 };
