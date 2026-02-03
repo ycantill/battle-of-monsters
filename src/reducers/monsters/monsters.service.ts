@@ -6,9 +6,7 @@ const getAll = async (): Promise<Monster[]> => {
   // En desarrollo usa JSON Server local (/monsters)
   const endpoint =
     process.env.NODE_ENV === 'production' ? '/monsters' : '/monsters';
-  return await fetch(`${API_URL}${endpoint}`).then(response =>
-    response.json(),
-  );
+  return await fetch(`${API_URL}${endpoint}`).then(response => response.json());
 };
 
 export const MonsterService = {
