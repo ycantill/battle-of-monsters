@@ -45,13 +45,15 @@ npm run dev           # Terminal 2 - Frontend (puerto 3000)
 
 **Frontend (GitHub Pages):** Se despliega automáticamente al hacer push a `main`
 
-**Backend (Firebase Functions):** Desplegado en Cloud Functions
+**Backend (Firebase Functions):** Se despliega automáticamente cuando hay cambios en `functions/`
 - URL Base: `https://us-central1-battle-of-monsters.cloudfunctions.net`
 - Endpoints: `/monsters` (GET) y `/battle` (POST)
+- Ver [GITHUB_ACTIONS_FIREBASE.md](GITHUB_ACTIONS_FIREBASE.md) para configurar el token
 
 **Configuración:**
 1. GitHub → Settings → Pages → Source: **GitHub Actions**
-2. Push a `main` y espera el despliegue automático
+2. Configura `FIREBASE_TOKEN` en GitHub Secrets (ver guía)
+3. Push a `main` y espera el despliegue automático
 
 **Demo:** `https://ycantill.github.io/battle-of-monsters`
 
