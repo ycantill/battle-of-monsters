@@ -13,11 +13,13 @@ Aplicación web para simular batallas entre monstruos, desarrollada con React, T
 
 ## 🚀 Instalación y Ejecución
 
+### Desarrollo Local
+
 ```bash
 # Instalar dependencias
 npm install
 
-# Ejecutar (requiere 2 terminales)
+# Ejecutar con backend local (JSON Server)
 npm run serve:data    # Terminal 1 - Backend (puerto 3001)
 npm run dev           # Terminal 2 - Frontend (puerto 3000)
 ```
@@ -36,23 +38,28 @@ npm run dev           # Terminal 2 - Frontend (puerto 3000)
 - TypeScript 4.7.4
 - Redux Toolkit 1.8.3
 - Material-UI 5.8.7
-- JSON Server
+- Firebase Functions (Backend API)
+- JSON Server (Desarrollo local)
 
 ## 🚀 Despliegue
 
-El proyecto se despliega automáticamente en GitHub Pages al hacer push a `main`. 
+**Frontend (GitHub Pages):** Se despliega automáticamente al hacer push a `main`
+
+**Backend (Firebase Functions):** Desplegado en Cloud Functions
+- URL Base: `https://us-central1-battle-of-monsters.cloudfunctions.net`
+- Endpoints: `/monsters` (GET) y `/battle` (POST)
 
 **Configuración:**
 1. GitHub → Settings → Pages → Source: **GitHub Actions**
 2. Push a `main` y espera el despliegue automático
 
-**URL:** `https://ycantill.github.io/battle-of-monsters`
+**Demo:** `https://ycantill.github.io/battle-of-monsters`
 
 ## 📝 Notas
 
-- Asegúrate de que los puertos 3000 y 3001 estén disponibles
-- El servidor de datos debe ejecutarse junto con la aplicación React
-- GitHub Pages solo sirve archivos estáticos (el backend JSON Server no funcionará en producción)
+- **Desarrollo:** Usa JSON Server local (puerto 3001)
+- **Producción:** Usa Firebase Cloud Functions automáticamente
+- El backend se despliega por separado con `firebase deploy --only functions`
 
 ## 📄 Licencia
 
